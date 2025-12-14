@@ -9,11 +9,9 @@ def generate_tokens(user):
     """
     Generate access and refresh tokens for a given user.
     
-    Args:
-        user: UserModel instance
+    Args: UserModel instance
         
-    Returns:
-        dict: Dictionary containing 'access' and 'refresh' tokens
+    Returns: dict
     """
     refresh = RefreshToken.for_user(user)
     
